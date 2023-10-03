@@ -36,7 +36,7 @@ function App() {
 
   const renderForm = () => {
     return (
-      <div className="flex h-screen bg-charcoalgrey">
+      <main className="flex h-screen bg-charcoalgrey">
         <div
           className="font-Roboto bg-white 
         desktop:rounded-4xl desktop:m-auto desktop:max-w-6xl desktop:flex desktop:flex-row-reverse desktop:h-2/3"
@@ -86,14 +86,14 @@ function App() {
               </li>
             </ul>
 
-            <div className=" flex flex-col mt-8 ">
+            <div className="flex flex-col mt-8">
               <form onSubmit={handleSubmit} className="flex flex-col">
                 <div className="flex flex-row justify-between px-1 mb-2">
-                  <label className="text-darkslategrey font-bold text-xs ">
+                  <label className="text-darkslategrey font-bold text-xs">
                     Email address
                   </label>
                   {error && (
-                    <p className=" ps-2 text-tomato text-xs font-bold">
+                    <p className="ps-2 text-tomato text-xs font-bold">
                       {error}
                     </p>
                   )}
@@ -125,18 +125,18 @@ function App() {
             </button>
           </div>
         </div>
-      </div>
+      </main>
     );
   };
 
   const renderThanks = () => {
     return (
-      <div className="flex h-screen bg-charcoalgrey">
+      <main className="flex h-screen bg-charcoalgrey">
         <div
           className="h-screen bg-white 
         desktop:h-3/5 desktop:rounded-4xl desktop:max-w-lg desktop:m-auto desktop:p-6"
         >
-          <section className=" h-5/6 flex flex-col justify-center px-8 ">
+          <section className="h-5/6 flex flex-col justify-center px-8">
             <img
               src={iconSuccess}
               alt="illustration success"
@@ -156,11 +156,11 @@ function App() {
             </p>
           </section>
           <section
-            className=" h-1/6 flex flex-col justify-center px-8 
+            className="h-1/6 flex flex-col justify-center px-8 
           desktop:pb-8"
           >
             <button
-              className=" bg-darkslategrey w-full rounded-lg p-4 text-white mt-2
+              className="bg-darkslategrey w-full rounded-lg p-4 text-white mt-2
               hover:cursor-pointer hover:bg-gradient-to-r from-pink-500 via-red-500 to-tomato hover:shadow-custom"
               onClick={handleDissmiss}
             >
@@ -169,7 +169,7 @@ function App() {
             </button>
           </section>
         </div>
-      </div>
+      </main>
     );
   };
 
